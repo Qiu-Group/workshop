@@ -1,0 +1,23 @@
+vi <file1>   open <file1>, create a new if it does not exist
+
+press 'i' key to enter 'insert'/writing mode and beging typing
+
+Once done writing, press 'Esc' key to leave 'insert'/writing mode
+
+save and exit by typing :x 
+
+dd           delete the current line 
+5dd          delete 5 lines
+
+yy           copy the current line 
+5yy          copy 5 lines
+
+p            paste the copied line(s)
+
+To discard any changes to the file while exiting,
+
+type :q!
+
+Ctrl+D        page down
+Ctrl+U        page up
+

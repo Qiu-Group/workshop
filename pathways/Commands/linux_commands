@@ -1,0 +1,10 @@
+ls                      show the list of files
+cd <directotry>         go to the <directory> 
+cd ..                   go one directory up
+
+cp <file1> <directory>  copy <file1> to <directory>
+cp <file1> <file2>      make a copy of <file1> as a new <file2>
+
+rm <file1>              remove/delete <file1>
+rm -r <directory>       remove the directory and all the contents inside it (Be careful!)
+

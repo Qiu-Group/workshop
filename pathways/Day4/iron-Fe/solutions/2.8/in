@@ -1,0 +1,40 @@
+&control
+   prefix = 'iron'
+   calculation = 'relax'
+   restart_mode = 'from_scratch'
+   tstress = .true.
+   tprnfor = .true.
+   pseudo_dir = './'
+   etot_conv_thr = 1.0d-4
+   forc_conv_thr = 1.0d-3
+/
+&system
+   ntyp             = 1
+   nat              = 2 
+   ibrav            = 0
+   ecutwfc = 40 
+   occupations = 'smearing'
+   smearing = 'gaussian'
+   degauss = 5d-3
+/
+&electrons
+   conv_thr = 1.0d-8 
+/
+&ions
+   ion_dynamics = 'bfgs'
+/
+&cell
+   cell_dynamics = 'bfgs'
+/
+CELL_PARAMETERS angstrom
+2.800000   0.000000  0.000000 
+0.000000   2.800000  0.000000
+0.000000   0.000000  2.800000 
+ATOMIC_SPECIES
+Fe 55.845 Fe.potential.UPF
+ATOMIC_POSITIONS crystal 
+Fe  0.000000    0.00000  0.000000 
+Fe  0.500000    0.50000  0.500000 
+
+K_POINTS automatic
+4 4 4 0 0 0 

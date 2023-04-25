@@ -1,0 +1,45 @@
+&control
+   prefix = 'salt'
+   calculation = 'relax'
+   restart_mode = 'from_scratch'
+   tstress = .true.
+   tprnfor = .true.
+   pseudo_dir = './'
+   etot_conv_thr = 1.0d-4
+   forc_conv_thr = 1.0d-3
+/
+&system
+   ntyp             = 2
+   nat              = 8 
+   ibrav            = 0
+   ecutwfc = 40 
+/
+&electrons
+   conv_thr = 1.0d-8 
+/
+&ions
+   ion_dynamics = 'bfgs'
+/
+&cell
+   cell_dynamics = 'bfgs'
+/
+CELL_PARAMETERS angstrom
+5.900000   0.000000  0.000000 
+0.000000   5.900000  0.000000
+0.000000   0.000000  5.900000 
+ATOMIC_SPECIES
+Na 22.990 Na.potential.UPF
+Cl 35.453 Cl.potential.UPF
+ATOMIC_POSITIONS crystal 
+Na 0.000000 0.000000 0.000000 
+Na 0.000000 0.500000 0.500000 
+Na 0.500000 0.000000 0.500000 
+Na 0.500000 0.500000 0.000000 
+Cl 0.500000 0.000000 0.000000 
+Cl 0.500000 0.500000 0.500000 
+Cl 0.000000 0.000000 0.500000 
+Cl 0.000000 0.500000 0.000000 
+
+
+K_POINTS automatic
+2 2 2 0 0 0 

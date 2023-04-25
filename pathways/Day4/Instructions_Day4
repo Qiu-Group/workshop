@@ -1,0 +1,27 @@
+1. Open the terminal from Jupyter Lab and type 
+
+day4
+
+and hit 'Enter'
+
+2. Go to Day4 directory inside Pathways_workshop 
+
+3. Go to gold-Au directory 
+
+4. Inside, go to each directory one by one and run Quantum Espresso (pw.x)
+
+5. Run pw.x on 6 cores using the mpirun command  we learnt on Day 2
+
+mpirun -n 6 pw.x -input in > out &
+
+6. Get the energy using the Linux command
+
+grep ! out 
+
+7. Save this value in the plt_energy_dist.py and plt_parabola.py python programs in the gold-Au directory.
+
+8. Run the python programs using
+
+python plt_energy_dist.py
+
+python plt_parabola.py
